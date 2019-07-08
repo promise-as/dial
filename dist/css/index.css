@@ -1,0 +1,17 @@
+body { text-align: center; }
+
+#values { width: 200px; }
+
+.canvas-box { width: 400px; height: 400px; margin: 0 auto; position: relative; border: 1px solid #ddd; }
+
+.canvas-box .needle { position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; height: 280px; width: 30px; -webkit-transform: scale(0.6) rotate(0deg); transform: scale(0.6) rotate(0deg); -webkit-transition: -webkit-transform 3s ease-out; transition: -webkit-transform 3s ease-out; transition: transform 3s ease-out; transition: transform 3s ease-out, -webkit-transform 3s ease-out; }
+
+.canvas-box .needle .needle-header { width: 24px; height: 0; border-style: solid; border-color: transparent transparent #d95653 transparent; border-width: 0 4px 16px 4px; position: absolute; left: -1px; }
+
+.canvas-box .needle .needle-header:after { width: 0; height: 0; top: 16px; left: -4px; border-style: solid; border-color: #d95653 transparent transparent transparent; border-width: 16px 16px 0 16px; position: absolute; content: ""; }
+
+.canvas-box .needle .needle-body { background: #d95653; width: 16px; height: 225px; position: absolute; top: 0; right: 0; left: 0; margin: auto; }
+
+.canvas-box .needle .needle-body:after { content: ''; background: #d95653; width: 40px; height: 12px; position: absolute; bottom: 0; left: -12px; border-radius: 4px; }
+
+.canvas-box .needle .needle-bottom { content: ''; position: absolute; background: #d95653; width: 30px; height: 50px; border-radius: 4px 4px 10px 10px; left: 0; bottom: 0; }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>转盘</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <!--<script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>-->
+</head>
+<body>
+
+
+<div>
+  <h1>转盘</h1>
+
+  <div class="canvas-box">
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <div id="needle" class="needle">
+      <div class="needle-header"></div>
+      <div class="needle-body"></div>
+      <div class="needle-bottom"></div>
+    </div>
+  </div>
+
+  <label for="options">
+    添加轮盘选项：
+    <input placeholder="格式为：'加班-旅游-马杀鸡'" id="options" type="text">
+  </label>
+
+  <input id="addBtn" type="button" value="添加">
+  <input value="翻转吧少年" type="button" id="rotate">
+
+</div>
+
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
